@@ -3,60 +3,25 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="less/style.css">
 <title>Document</title>
-<script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <!-- <div id="container" style="width: 500px; height: 400px;"></div> -->
+    <header class="header">
 
-    <div class="wraper">
-        <header class="header">
-            <div class="header__bar bar-body">
-                <ul class="bar-body__playlist">
-                    <li class="bar-body__list list-1">Тип предприятия</li>
-                    <li class="bar-body__list list-2">Категории</li>
-                    <li class="bar-body__list list-3">График работы</li>
-                    <li class="bar-body__list list-4">Оборот и нагрузка</li>
-                    <li class="bar-body__list list-5">Должности</li>
-                    <li class="bar-body__list list-6">Тип нагрузки</li>
-                </ul>
-                <div class="bar-body__progresbar progresbars">
-                    <div class="progresbars__cricle item-1">1</div>
-                    <div class="progresbars__linear item-2"></div>
-                    <div class="progresbars__cricle item-3">2</div>
-                    <div class="progresbars__linear item-4"></div>
-                    <div class="progresbars__cricle item-5">3</div>
-                    <div class="progresbars__linear item-6"></div>
-                    <div class="progresbars__cricle item-7">4</div>
-                    <div class="progresbars__linear item-8"></div>
-                    <div class="progresbars__cricle item-9">5</div>
-                    <div class="progresbars__linear item-10"></div>
-                    <div class="progresbars__cricle item-11">6</div>
-                </div>
+        <span class="header__title"><span class="header__subtitle"></span>
+        </span>
+        <form class="header__form form">
+            <input type="search" class="form__search"></input>
+            <select aria-placeholder="Collection" name="coletion" class="form__coletion">
+	
+	</form>
+	
+	  
+  </header>
+  <main class="main"></main>
+  <footer class="footer"></footer>
 
-            </div>
-
-        </header>
-        <main class="main">
-            <div class="section__chart chart">
-                <h2>График работы предприятия</h2>
-                <label for="inputData">Задать интервал таблицы </label>
-                <input type="time" name="start" id="inputData-1">
-                <input type="time" name="end" id="inputData-2">
-                <div id="container" style="width: 565;height: 283px;"></div>
-                <div class="chart__buttons">
-                    <button type="submit" class="chart__button-1"><span class="fa fa-check" aria-hidden="true"></span> Заполнить автоматически</button>
-                    <button type="reset" class="chart__button-2"><span class="fa fa-times" aria-hidden="true"></span>Очистить</button>
-                </div>
-            </div>
-            <div class="main__buttons">
-                <button class="main__button-before">Назад</button>
-                <button class="main__button-after">Далее</button>
-            </div>
-
-        </main>
-        <footer class="footer"></footer>
-    </div>
+  
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
